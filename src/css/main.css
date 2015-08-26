@@ -1,0 +1,63 @@
+@import url(CSS:../../bower_components/normalize.css/normalize.css);
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url('../fonts/../fonts/Ubuntu-B.ttf?1440604176') format('truetype');
+}
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url('../fonts/../fonts/Ubuntu-M.ttf?1440604176') format('truetype');
+}
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url('../fonts/../fonts/Ubuntu-L.ttf?1440604176') format('truetype');
+}
+body {
+  background: #edeff4;
+  padding-top: 60px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+header .container {
+  height: 100%;
+}
+header .container:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+header .logo {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/logo.png) no-repeat;
+  width: 207px;
+  height: 46px;
+}
+header nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+header nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+header nav ul li a {
+  color: #141e32;
+  font: 12px 'Ubuntu-Medium';
+  text-decoration: none;
+  text-transform: uppercase;
+}

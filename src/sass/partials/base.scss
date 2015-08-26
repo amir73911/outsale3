@@ -1,0 +1,9 @@
+body {
+  background: $c-site-background;
+  padding-top: $header-height;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
