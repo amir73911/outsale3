@@ -1,0 +1,18 @@
+.main-hero {
+  height: 610px;
+  background: url("../images/block1_back.jpg") center top no-repeat;
+  .text-wrapper {
+    float: right;
+    font: 72px/75px 'GothamPro-Black';
+    color: #fff;
+    padding-top: 120px;
+    .text-inner {
+      margin-bottom: 25px;
+      text-shadow: 0 3px 10px rgba(#000, 0.6);
+      span {
+        color: $c-main-blue;
+        white-space: nowrap;
+      }
+    }
+  }
+}

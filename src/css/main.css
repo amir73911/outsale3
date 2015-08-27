@@ -1,24 +1,58 @@
 @import url(CSS:../../bower_components/normalize.css/normalize.css);
 @font-face {
   font-family: "Ubuntu-Bold";
-  src: url('../fonts/../fonts/Ubuntu-B.ttf?1440604176') format('truetype');
+  src: url('../fonts/../fonts/Ubuntu-B.ttf?1440693102') format('truetype');
 }
 @font-face {
   font-family: "Ubuntu-Medium";
-  src: url('../fonts/../fonts/Ubuntu-M.ttf?1440604176') format('truetype');
+  src: url('../fonts/../fonts/Ubuntu-M.ttf?1440693102') format('truetype');
 }
 @font-face {
   font-family: "Ubuntu-Light";
-  src: url('../fonts/../fonts/Ubuntu-L.ttf?1440604176') format('truetype');
+  src: url('../fonts/../fonts/Ubuntu-L.ttf?1440693102') format('truetype');
+}
+@font-face {
+  font-family: "GothamPro-Black";
+  src: url('../fonts/../fonts/GothaProBla.otf?1440696549') format('opentype');
 }
 body {
   background: #edeff4;
   padding-top: 60px;
+  overflow-x: hidden;
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 13px 35px;
+  font: 12px/12px 'Ubuntu-Medium';
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.button:hover {
+  background: #fff;
+  color: #209cbe;
+}
+.button.button-blue {
+  padding: 10px 15px;
+  border-color: #209cbe;
+  color: #209cbe;
+  background: #fff;
+}
+.button.button-blue:hover {
+  background: #209cbe;
+  color: #fff;
 }
 
 header {
@@ -26,18 +60,25 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
   height: 60px;
   background: #fff;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 header .container {
   height: 100%;
+  text-align: justify;
 }
 header .container:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 100%;
+}
+header .container:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
 }
 header .logo {
   display: inline-block;
@@ -46,18 +87,51 @@ header .logo {
   width: 207px;
   height: 46px;
 }
-header nav {
+header #main_nav {
   display: inline-block;
   vertical-align: middle;
 }
-header nav ul li {
+header #main_nav ul {
+  padding: 0;
+}
+header #main_nav ul li {
   display: inline-block;
   vertical-align: middle;
   padding: 0 20px;
 }
-header nav ul li a {
+header #main_nav ul li a {
   color: #141e32;
   font: 12px 'Ubuntu-Medium';
   text-decoration: none;
   text-transform: uppercase;
+  transition: color 0.5s ease;
+}
+header #main_nav ul li a:hover, header #main_nav ul li a.active {
+  color: #209cbe;
+}
+header .phone {
+  display: inline-block;
+  vertical-align: middle;
+  color: #209cbe;
+  font: 24px 'Ubuntu-Bold';
+  text-decoration: none;
+}
+
+.main-hero {
+  height: 610px;
+  background: url("../images/block1_back.jpg") center top no-repeat;
+}
+.main-hero .text-wrapper {
+  float: right;
+  font: 72px/75px 'GothamPro-Black';
+  color: #fff;
+  padding-top: 120px;
+}
+.main-hero .text-wrapper .text-inner {
+  margin-bottom: 25px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+.main-hero .text-wrapper .text-inner span {
+  color: #209cbe;
+  white-space: nowrap;
 }

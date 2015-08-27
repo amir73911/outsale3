@@ -1,9 +1,11 @@
 body {
   background: $c-site-background;
   padding-top: $header-height;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: $container-width;
   margin: 0 auto;
+  padding: 0 $gap;
 }

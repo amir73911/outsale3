@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid $c-white;
+  border-radius: 5px;
+  color: $c-white;
+  padding: 13px 35px;
+  font: 12px/12px 'Ubuntu-Medium';
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all $anim-time ease;
+  &:hover {
+    background: $c-white;
+    color: $c-main-blue;
+  }
+  &.button-blue {
+    padding: 10px 15px;
+    border-color: $c-main-blue;
+    color: $c-main-blue;
+    background: $c-white;
+    &:hover {
+      background: $c-main-blue;
+      color: $c-white;
+    }
+  }
+}

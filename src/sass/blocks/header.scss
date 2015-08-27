@@ -3,16 +3,24 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
   height: $header-height;
   background: $c-white;
   box-shadow: 0 1px 5px rgba(0,0,0,0.5);
   .container {
     height: 100%;
+    text-align: justify;
     &:before {
       content: "";
       display: inline-block;
       vertical-align: middle;
       height: 100%;
+    }
+    &:after {
+      content: "";
+      width: 100%;
+      display: inline-block;
+
     }
   }
   .logo {
@@ -22,10 +30,11 @@ header {
     width: 207px;
     height: 46px;
   }
-  nav {
+  #main_nav {
     display: inline-block;
     vertical-align: middle;
     ul {
+      padding: 0;
       li {
         display: inline-block;
         vertical-align: middle;
@@ -35,8 +44,20 @@ header {
           font: 12px 'Ubuntu-Medium';
           text-decoration: none;
           text-transform: uppercase;
+          transition: color $anim-time ease;
+          &:hover,
+          &.active {
+            color: $c-main-blue;
+          }
         }
       }
     }
+  }
+  .phone {
+    display: inline-block;
+    vertical-align: middle;
+    color: #209cbe;
+    font: 24px 'Ubuntu-Bold';
+    text-decoration: none;
   }
 }
