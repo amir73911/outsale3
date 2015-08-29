@@ -17,11 +17,16 @@ body {
 section {
   padding-top: 75px;
   padding-bottom: 75px;
+  background-size: cover;
   h2 {
     text-align: center;
     font: 36px 'GothamPro-Bold';
     color: #141e32;
     margin: 0 0 $gap*4;
+    text-transform: uppercase;
+    &.white-color {
+      color: $c-white;
+    }
     span {
       color: $c-main-blue;
     }

@@ -42,12 +42,17 @@ body {
 section {
   padding-top: 75px;
   padding-bottom: 75px;
+  background-size: cover;
 }
 section h2 {
   text-align: center;
   font: 36px 'GothamPro-Bold';
   color: #141e32;
   margin: 0 0 40px;
+  text-transform: uppercase;
+}
+section h2.white-color {
+  color: #fff;
 }
 section h2 span {
   color: #209cbe;
@@ -146,8 +151,7 @@ header .phone {
 .main-hero {
   height: 610px;
   padding: 0;
-  background: url("../images/block1_back.jpg") center top no-repeat;
-  background-size: cover;
+  background: url("../images/backs/1.jpg") center top no-repeat;
 }
 .main-hero .text-wrapper {
   float: right;
@@ -188,4 +192,12 @@ header .phone {
 }
 .main-client-problems .problems .item .text {
   font: 14px 'Ubuntu';
+}
+
+.selling-point {
+  padding: 150px 0 120px;
+  background: url("../images/backs/2.jpg") center top no-repeat;
+}
+.selling-point h2 {
+  margin-bottom: 0;
 }
