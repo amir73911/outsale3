@@ -12,9 +12,21 @@
   src: url('../fonts/../fonts/Ubuntu-L.ttf?1440693102') format('truetype');
 }
 @font-face {
+  font-family: "Ubuntu";
+  src: url('../fonts/../fonts/Ubuntu-R.ttf?1440854384') format('truetype');
+}
+@font-face {
   font-family: "GothamPro-Black";
   src: url('../fonts/../fonts/GothaProBla.otf?1440696549') format('opentype');
 }
+@font-face {
+  font-family: "GothamPro-Bold";
+  src: url('../fonts/../fonts/GothaProBol.otf?1440845313') format('opentype');
+}
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #edeff4;
   padding-top: 60px;
@@ -25,6 +37,20 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+section h2 {
+  text-align: center;
+  font: 36px 'GothamPro-Bold';
+  color: #141e32;
+  margin: 0 0 40px;
+}
+section h2 span {
+  color: #209cbe;
 }
 
 .button {
@@ -119,7 +145,9 @@ header .phone {
 
 .main-hero {
   height: 610px;
+  padding: 0;
   background: url("../images/block1_back.jpg") center top no-repeat;
+  background-size: cover;
 }
 .main-hero .text-wrapper {
   float: right;
@@ -134,4 +162,30 @@ header .phone {
 .main-hero .text-wrapper .text-inner span {
   color: #209cbe;
   white-space: nowrap;
+}
+
+.main-client-problems .problems {
+  font-size: 0;
+}
+.main-client-problems .problems .item {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  text-align: center;
+  color: #141e32;
+  padding: 10px;
+}
+.main-client-problems .problems .item .image {
+  margin-bottom: 20px;
+}
+.main-client-problems .problems .item .image img {
+  max-width: 100%;
+}
+.main-client-problems .problems .item .title {
+  font: 18px 'Ubuntu-Medium';
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.main-client-problems .problems .item .text {
+  font: 14px 'Ubuntu';
 }
