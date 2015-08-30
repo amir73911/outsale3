@@ -33,20 +33,34 @@ header {
   #main_nav {
     display: inline-block;
     vertical-align: middle;
+    height: 100%;
     ul {
       padding: 0;
+      margin: 0;
+      display: block;
+      height: 100%;
+      font-size: 0;
       li {
         display: inline-block;
         vertical-align: middle;
-        padding: 0 20px;
+        height: 100%;
+        &.active {
+          a {
+            color: $c-white !important;
+            background: $c-main-blue;
+          }
+        }
         a {
           color: #141e32;
           font: 12px 'Ubuntu-Medium';
           text-decoration: none;
           text-transform: uppercase;
-          transition: color $anim-time ease;
-          &:hover,
-          &.active {
+          transition: all $anim-time ease;
+          padding: 0 20px;
+          display: block;
+          height: 100%;
+          line-height: $header-height;
+          &:hover {
             color: $c-main-blue;
           }
         }
