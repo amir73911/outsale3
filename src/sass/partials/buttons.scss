@@ -2,7 +2,7 @@
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid $c-white;
+  border: 2px solid $c-white;
   border-radius: 5px;
   color: $c-white;
   padding: 13px 35px;
@@ -15,10 +15,8 @@
     color: $c-main-blue;
   }
   &.button-blue {
-    padding: 10px 15px;
     border-color: $c-main-blue;
     color: $c-main-blue;
-    background: $c-white;
     &:hover {
       background: $c-main-blue;
       color: $c-white;

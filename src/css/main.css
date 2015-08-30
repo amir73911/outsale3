@@ -31,6 +31,7 @@ body {
   background: #edeff4;
   padding-top: 60px;
   overflow-x: hidden;
+  color: #141e32;
 }
 
 .container {
@@ -62,7 +63,7 @@ section h2 span {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 5px;
   color: #fff;
   padding: 13px 35px;
@@ -76,10 +77,8 @@ section h2 span {
   color: #209cbe;
 }
 .button.button-blue {
-  padding: 10px 15px;
   border-color: #209cbe;
   color: #209cbe;
-  background: #fff;
 }
 .button.button-blue:hover {
   background: #209cbe;
@@ -147,6 +146,10 @@ header .phone {
   font: 24px 'Ubuntu-Bold';
   text-decoration: none;
 }
+header .button {
+  padding: 10px 15px;
+  border-width: 1px;
+}
 
 .main-hero {
   height: 610px;
@@ -176,7 +179,6 @@ header .phone {
   vertical-align: top;
   width: 25%;
   text-align: center;
-  color: #141e32;
   padding: 10px;
 }
 .main-client-problems .problems .item .image {
@@ -200,4 +202,70 @@ header .phone {
 }
 .selling-point h2 {
   margin-bottom: 0;
+}
+
+.services {
+  background: url("../images/backs/3.jpg") center bottom no-repeat;
+  padding-bottom: 535px;
+}
+.services .services-items {
+  padding: 0 100px;
+  margin-bottom: 150px;
+}
+.services .services-items .item {
+  font-size: 0;
+  margin-bottom: 75px;
+}
+.services .services-items .item:nth-child(even) {
+  direction: rtl;
+}
+.services .services-items .item:nth-child(even) .title .button {
+  left: auto;
+  right: 20px;
+}
+.services .services-items .item .image,
+.services .services-items .item .title {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+.services .services-items .item .image {
+  max-width: 240px;
+}
+.services .services-items .item .image img {
+  max-width: 100%;
+}
+.services .services-items .item .title {
+  font: 36px 'GothamPro-Bold';
+  text-transform: uppercase;
+  position: relative;
+}
+.services .services-items .item .title p {
+  margin: 0;
+}
+.services .services-items .item .title .button {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+}
+.services .features-items {
+  font-size: 0;
+}
+.services .features-items .item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  text-align: center;
+  font: 16px 'Ubuntu-Medium';
+  padding: 0 10px;
+}
+.services .features-items .item .image {
+  margin-bottom: 25px;
+}
+.services .features-items .item .image img {
+  max-width: 100%;
+}
+.services .features-items .item .title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
