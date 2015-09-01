@@ -1,0 +1,101 @@
+.work-plan {
+  background-image: url("../images/backs/5.jpg");
+  .work-plan-items {
+    .item {
+      font-size: 0;
+      padding: 80px 0;
+      position: relative;
+      .image {
+        display: inline-block;
+        vertical-align: top;
+        width: 120px;
+        height: 120px;
+        img {
+          display: block;
+          border-radius: 50%;
+        }
+      }
+      .content {
+        display: inline-block;
+        vertical-align: top;
+        color: $c-white;
+        direction: ltr;
+        position: relative;
+        width: calc(50% - 180px);
+        &:before {
+          content: "";
+          display: block;
+          width: 261px;
+          height: 153px;
+          position: absolute;
+          top: calc(100% + 15px);
+        }
+        .work-plan-icon {
+          height: 50px;
+          background-repeat: no-repeat;
+          &.wp-customer {
+            background-image: inline-image("icons/wp-customer.png");
+          }
+          &.wp-question {
+            background-image: inline-image("icons/wp-question.png");
+          }
+          &.wp-write {
+            background-image: inline-image("icons/wp-write.png");
+          }
+          &.wp-talk {
+            background-image: inline-image("icons/wp-talk.png");
+          }
+        }
+        .title {
+          font: 18px 'Ubuntu-Medium';
+          padding-bottom: 6px;
+          text-transform: uppercase;
+        }
+        .text {
+          font: 14px 'Ubuntu';
+        }
+      }
+      &:nth-child(odd) {
+        direction: rtl;
+        text-align: right;
+        right: 50%;
+        margin-right: -60px;
+        .image {
+          margin-left: 60px;
+        }
+        .content {
+          .work-plan-icon {
+            background-position: right center;
+          }
+          &:before {
+            background: url("../images/wp-separator1.png");
+            left: calc(100% - 10px);
+          }
+        }
+      }
+      &:nth-child(even) {
+        left: 50%;
+        margin-left: -60px;
+        .image {
+          margin-right: 60px;
+        }
+        .content {
+          .work-plan-icon {
+            background-position: left center;
+          }
+          &:before {
+            background: url("../images/wp-separator2.png");
+            right: calc(100% - 10px);
+          }
+        }
+      }
+      &:nth-last-child(1) {
+        .content {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

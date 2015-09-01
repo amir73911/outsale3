@@ -6,6 +6,7 @@ body {
   background: $c-site-background;
   padding-top: $header-height;
   overflow-x: hidden;
+  font-family: 'Ubuntu', sans-serif;
   color: $c-main-text;
 }
 
@@ -13,6 +14,7 @@ body {
   max-width: $container-width;
   margin: 0 auto;
   padding: 0 $gap;
+  overflow: hidden;
 }
 
 section {

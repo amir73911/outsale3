@@ -31,6 +31,7 @@ body {
   background: #edeff4;
   padding-top: 60px;
   overflow-x: hidden;
+  font-family: 'Ubuntu', sans-serif;
   color: #141e32;
 }
 
@@ -38,6 +39,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+  overflow: hidden;
 }
 
 section {
@@ -348,4 +350,96 @@ header .button {
 .main-form .main-form-inner {
   width: 60%;
   padding-left: 6%;
+}
+
+.work-plan {
+  background-image: url("../images/backs/5.jpg");
+}
+.work-plan .work-plan-items .item {
+  font-size: 0;
+  padding: 80px 0;
+  position: relative;
+}
+.work-plan .work-plan-items .item .image {
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+  height: 120px;
+}
+.work-plan .work-plan-items .item .image img {
+  display: block;
+  border-radius: 50%;
+}
+.work-plan .work-plan-items .item .content {
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  direction: ltr;
+  position: relative;
+  width: calc(50% - 180px);
+}
+.work-plan .work-plan-items .item .content:before {
+  content: "";
+  display: block;
+  width: 261px;
+  height: 153px;
+  position: absolute;
+  top: calc(100% + 15px);
+}
+.work-plan .work-plan-items .item .content .work-plan-icon {
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.work-plan .work-plan-items .item .content .work-plan-icon.wp-customer {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFCN0NFNjM4NTBENzExRTU4NEQ0OTREMURCMzlBNTkxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFCN0NFNjM5NTBENzExRTU4NEQ0OTREMURCMzlBNTkxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUI3Q0U2MzY1MEQ3MTFFNTg0RDQ5NEQxREIzOUE1OTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUI3Q0U2Mzc1MEQ3MTFFNTg0RDQ5NEQxREIzOUE1OTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz49B/epAAACPUlEQVR42qyWSUtcQRSFq40KCWLjEBAlUdopqCBJQAUDBgKiOMQY9Q8IcScOqH9BI0GCGxf2JkREF7pQiLoRFXXjsAiJU2fjQhwQY6vgjOfi6fB46X5dnbwLX9er4Z7zhuqqcij3jAoSUaAR1IB0EAnWwDD4DM6sksODiD8HoyCZ9d/gGuSSD+AdWA0kEGYhngmmKT4CskEMyWFbMsdkhmog7YPACXrAe/DT0P+DbT0cMxBIK5BBKV/Pd9Bm8ZRtHPOSOdoGb1n2ghsLgxuOMeZoGeSynFXBY9aUo2XgZLmvYbBvytEyOGKZqGGQZMrRMlhmWaxh8IblUigGgyybwSMLcelrMuVoGcyDCfAEfAEOP2Ok7StIAd/AQigGVSCL17IUxPoZE2+YmlnMCWogC1kf15+nYBK8Bod+cg/YN8klQ3L6qeHX4AHfYwPYBRWgBMxZfIM5jqkEe6AeDFHrL4NuUA08IB+MK/0YA3nMlVfVaTYo4mw4BmVgW4UeklNOjVZq/jHo4qxoB5vq32MDdFCr636quWcKUC6CLfAM3Kr/C7npde5+BVKpZUe/DeKKGm5e14nBK1amlH3h0yoUA5dhl7IrfFquMP5LveDKRoNLcCLaYnAOHir7QzQvwjl/Zfb8Ais8gnhY3+EycRlARJaFOO4bqSCNe/kLHok88vMJtPDo4eIByxxe7r9e1qO5HERbPIFM1Y8Ow8nOydOBGGXwbhLAYwpF8JQnccpv5uWit8un3iQrvh3uToABADLIdThyGOSJAAAAAElFTkSuQmCC');
+}
+.work-plan .work-plan-items .item .content .work-plan-icon.wp-question {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAbCAYAAABMU775AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI0QUM1MjY3NTBENzExRTU5Nzk3Q0MyOThFMzNGMERDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI0QUM1MjY4NTBENzExRTU5Nzk3Q0MyOThFMzNGMERDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjRBQzUyNjU1MEQ3MTFFNTk3OTdDQzI5OEUzM0YwREMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjRBQzUyNjY1MEQ3MTFFNTk3OTdDQzI5OEUzM0YwREMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7StHXQAAAA/ElEQVR42qyU0Q2DIBCG0bgAK9gR6Ah2hK6AI3SFOoImnYAR9KXvdQVXYIVK8tNcTpFr00sIovdx3v0HhXo8FTO9DkPW8zo8d6owB8crRq22FuAB4wMGx5c6trBxj7mN4IIdDXme2Z9Es/DpCuTYIDeXiDbiuwJ4KrGYEhDNL1pIrS6VzCa2FoMbk4K0QEHTSQIaVDNaJ4mooR8tVBbUkMEQ6CLJcQ/yOfBOII8287mqBoFvZN2SFjwELRPeSXWkZ9H92gBL6kO1886R3vwKHP7Zq2KwYUXKghr3z4i5l4KWRbKpyJIctQR0rCfnnWtjV46g25mc+KQ0bwEGAJnyNx7h4sD6AAAAAElFTkSuQmCC');
+}
+.work-plan .work-plan-items .item .content .work-plan-icon.wp-write {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJEQTgzMTgwNTBENzExRTVBMzM2ODVEN0M2NzMwOEVBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJEQTgzMTgxNTBENzExRTVBMzM2ODVEN0M2NzMwOEVBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkRBODMxN0U1MEQ3MTFFNUEzMzY4NUQ3QzY3MzA4RUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkRBODMxN0Y1MEQ3MTFFNUEzMzY4NUQ3QzY3MzA4RUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4v4zB+AAACrUlEQVR42rSWW4hNYRTH55iRhjC5zANRLsVEgweR27hEksILD4NDaHgQExNqiiIxpElDaRrxMMa9hgceFB6YTG6nhBgv7tfcjlGOGX6L/9Rut/d2zrH3V792fXudc/7ft/5rrRPLqbuaE+EaA1UwCd7DSdgKSWdQpwgFjIIr8AtWwH4ohdtQ5AyMRXQT3eAmvIRZ0Kb9QjgLvWFkx35UN3EAesFihwBbbyEOw2FClOlYAkthGbzyeP9az3LoGYWIYXAQ9sAFn5hV8APGQgJGhCmiCzTAPagMMOtO2AGj4RE05oUoYi8MUlmmfMx6HJokxLxyB4rDEpGna24JSHGNzDpdAubDBlgTVjrM8Z3/lPzf08U9zBp3mHUenJCw2jBEFKkR7VKezZiH5Y8Ch1mrZFYTdFp75WE0q3y4AZ9hqqMnTIOj6pZflaKEKmIw7IONzlxOhmqpTnddhpX6XH+Y62pK9n49nNHMSOh37MZWQ1+3oeoVdCgDEQ9hkcy4AJ663hcq3w3ygrXwY0pJD1joFjEANiso3WWleE4na3S9M3MegVad2sr1EpRBH1VFvVtENsvqvDuc8nhXATM0vu1GvsAW+KS9Gn3eV4SdothHnA2fZ4qxWn+j3G+D3fLEeHXDCols0nz4BtuDmoxzDVGdxzxir8NETUA74Ti53ebEbFgrD1xUmuZAbjq37Q5oUZXkesR+17NEZXcLmnUblpa78ByWqzQzardePT7fY79VzylwTddfoC5oRr2vEf4hm57vTsdjn3TUqTeUqJzXaVqmNANq4We2g8e5nth8h64esZaqodAPNunKq9Wuk/87/dzrQUC8teZ2jeRKn39OoYgIWudhILwI8+9YplO0PWwBHTfxTjWdCvm7Z6pJJdMRUSa3l4Ys4qNmR9u/An8LMAAwYJx+SIMU6wAAAABJRU5ErkJggg==');
+}
+.work-plan .work-plan-items .item .content .work-plan-icon.wp-talk {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAYAAAAdx42aAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkNDQTYzRjAxNTBENzExRTVCMDJBRjQxOEMwMDY4MDFDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkNDQTYzRjAyNTBENzExRTVCMDJBRjQxOEMwMDY4MDFDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Q0NBNjNFRkY1MEQ3MTFFNUIwMkFGNDE4QzAwNjgwMUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Q0NBNjNGMDA1MEQ3MTFFNUIwMkFGNDE4QzAwNjgwMUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5gil97AAAClklEQVR42ryXWYhNcRzHz732mIuEmQfhRR54okyDJroaS414kKUwaeJBzdSkZpryIpQmJuWBMkZJsi9TQml4GNnC2MKM7UHGTlnCDJ9ffU9Op3Pu3MW5//p07z3b73t+/992Y87eS07EqxEqYCWc8p+MR2x8DVRBAqqDLugbofFVsBveQn8YF3RRFB4YCfugGT7CAvgcZut/ecAePgVW680Hw1VYAZ2pbsxGwHAoggliGpTCCJ1/AlthP/T09jC/gLmwDCbBMM9xC6I+nk//egZH4TC0hhiOpRJgb3UA5uv3O/jiue6lHvpe2PnH0AF34VUanhsDX+ECbIbrrgDjGMxSntbBwwiC85vElisw10JTXEXCjB+CRREZd71aDNPhDeyBqa6AXyoUf5zo1xVlh8VSrZs+96DLyd9qVXqWmoCfYREa8bJgTpiAdqXd6Dwat3SeDI/iKpuWCTvz5AmzsR0GWbFyBVyEJdAiZVEsa0gL4by65DXYZQK6lX5nVIja1UQ6RWNAs1mn8pvIQEAhnIQkHIEy+BHzDSRzYClMhAIYL1cVKo8dpesOfe9RNWzTC5yF7wHGX6i0b1QlfPBvP1JPRBtgm1zWpGOWtjfgKdyGmfKKrQ/a0gZ47RNga2ym88AJfS72HLsJz9X9lit7LIu2qKDVyCs1IY0rIwEdiomkb79N2FCYrep5H+rVcCq0DQ3aloJcBLjGBsA8z7HjAZ5x5IFmeeS07rHA65erAL+xNu1xeYibu3T9QXmpKBcBd7QVlqIDPdFvrXsUzAi5z9K7UqOZo/kh66HUvDBEE1OJRq6kzpX1MgPYNqxXJgWUxfT+mBSrjXZ7XP4JzsEmBWFWK92h1Nx4SxHdoui+DL9zrc9/BRgATCqVR9bu8K0AAAAASUVORK5CYII=');
+}
+.work-plan .work-plan-items .item .content .title {
+  font: 18px 'Ubuntu-Medium';
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+.work-plan .work-plan-items .item .content .text {
+  font: 14px 'Ubuntu';
+}
+.work-plan .work-plan-items .item:nth-child(odd) {
+  direction: rtl;
+  text-align: right;
+  right: 50%;
+  margin-right: -60px;
+}
+.work-plan .work-plan-items .item:nth-child(odd) .image {
+  margin-left: 60px;
+}
+.work-plan .work-plan-items .item:nth-child(odd) .content .work-plan-icon {
+  background-position: right center;
+}
+.work-plan .work-plan-items .item:nth-child(odd) .content:before {
+  background: url("../images/wp-separator1.png");
+  left: calc(100% - 10px);
+}
+.work-plan .work-plan-items .item:nth-child(even) {
+  left: 50%;
+  margin-left: -60px;
+}
+.work-plan .work-plan-items .item:nth-child(even) .image {
+  margin-right: 60px;
+}
+.work-plan .work-plan-items .item:nth-child(even) .content .work-plan-icon {
+  background-position: left center;
+}
+.work-plan .work-plan-items .item:nth-child(even) .content:before {
+  background: url("../images/wp-separator2.png");
+  right: calc(100% - 10px);
+}
+.work-plan .work-plan-items .item:nth-last-child(1) .content:before {
+  display: none;
 }
