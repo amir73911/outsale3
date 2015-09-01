@@ -10,6 +10,7 @@
   text-transform: uppercase;
   text-decoration: none;
   transition: all $anim-time ease;
+  background: none;
   &:hover {
     background: $c-white;
     color: $c-main-blue;

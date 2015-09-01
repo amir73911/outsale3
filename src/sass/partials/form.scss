@@ -1,0 +1,49 @@
+form {
+  font-size: 0;
+  .input-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px 30px;
+    width: 50%;
+  }
+  .buttons-wrapper {
+    text-align: center;
+  }
+}
+
+.input-wrapper {
+
+}
+
+.input {
+  background: $c-white no-repeat calc(100% - 10px) center;
+  border: 1px solid $c-input-border;
+  color: $c-main-text;
+  border-radius: 5px;
+  padding: 0 15px;
+  height: 40px;
+  width: 100%;
+  font: 14px 'Ubuntu';
+  outline: none;
+  transition: all $anim-time ease;
+  @include input-placeholder {
+    color: $c-input-placeholder;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $c-main-blue;
+  }
+  &.input-customer {
+    background-image: inline-image('icons/customer.png');
+    &:hover {
+      background-image: inline-image('icons/customer-active.png');
+    }
+  }
+  &.input-phone {
+    background-image: inline-image('icons/phone.png');
+    &:hover {
+      background-image: inline-image('icons/phone-active.png');
+    }
+  }
+}
