@@ -1,0 +1,25 @@
+.clients {
+  .clients-items {
+    font-size: 0;
+    .item {
+      display: inline-block;
+      vertical-align: top;
+      width: 25%;
+      .image {
+        margin-bottom: $gap*2;
+        img {
+          max-width: 100%;
+        }
+      }
+      .title {
+        color: $c-main-text;
+        font: 18px 'Ubuntu-Medium';
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+      a {
+        font: 14px 'Ubuntu';
+      }
+    }
+  }
+}

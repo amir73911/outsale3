@@ -35,6 +35,16 @@ body {
   color: #141e32;
 }
 
+a {
+  color: #108ad7;
+}
+a:hover {
+  color: #2ba3ef;
+}
+a:hover {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -481,5 +491,29 @@ header .button {
   padding: 20px 0 10px;
 }
 .team .team-items .item .post {
+  font: 14px 'Ubuntu';
+}
+
+.clients .clients-items {
+  font-size: 0;
+}
+.clients .clients-items .item {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+.clients .clients-items .item .image {
+  margin-bottom: 20px;
+}
+.clients .clients-items .item .image img {
+  max-width: 100%;
+}
+.clients .clients-items .item .title {
+  color: #141e32;
+  font: 18px 'Ubuntu-Medium';
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.clients .clients-items .item a {
   font: 14px 'Ubuntu';
 }

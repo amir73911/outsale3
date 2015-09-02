@@ -10,6 +10,13 @@ body {
   color: $c-main-text;
 }
 
+a {
+  @include link-colors($c-link, lighten($c-link, 10%));
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .container {
   max-width: $container-width;
   margin: 0 auto;
