@@ -1,0 +1,43 @@
+.team {
+  .team-items {
+    font-size: 0;
+    .item {
+      display: inline-block;
+      vertical-align: top;
+      width: 25%;
+      color: #1b1b1b;
+      padding-right: 65px;
+      .image {
+        position: relative;
+        img {
+          transition: opacity $anim-time ease;
+        }
+        .img {
+          display: block;
+        }
+        .img-hover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+        &:hover {
+          .img {
+            opacity: 0;
+          }
+          .img-hover {
+            opacity: 1;
+          }
+        }
+      }
+      .name {
+        font: 18px 'Ubuntu-Medium';
+        text-transform: uppercase;
+        padding: $gap*2 0 $gap;
+      }
+      .post {
+        font: 14px 'Ubuntu';
+      }
+    }
+  }
+}

@@ -443,3 +443,43 @@ header .button {
 .work-plan .work-plan-items .item:nth-last-child(1) .content:before {
   display: none;
 }
+
+.team .team-items {
+  font-size: 0;
+}
+.team .team-items .item {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  color: #1b1b1b;
+  padding-right: 65px;
+}
+.team .team-items .item .image {
+  position: relative;
+}
+.team .team-items .item .image img {
+  transition: opacity 0.5s ease;
+}
+.team .team-items .item .image .img {
+  display: block;
+}
+.team .team-items .item .image .img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.team .team-items .item .image:hover .img {
+  opacity: 0;
+}
+.team .team-items .item .image:hover .img-hover {
+  opacity: 1;
+}
+.team .team-items .item .name {
+  font: 18px 'Ubuntu-Medium';
+  text-transform: uppercase;
+  padding: 20px 0 10px;
+}
+.team .team-items .item .post {
+  font: 14px 'Ubuntu';
+}
