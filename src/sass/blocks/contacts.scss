@@ -1,0 +1,35 @@
+.contacts {
+  height: 560px;
+  padding: 0;
+  .container {
+    position: relative;
+    top: -560px;
+  }
+  .contacts-inner {
+    background: url("../images/contacts.png") no-repeat;
+    width: 460px;
+    height: 358px;
+    padding: 40px;
+    color: $c-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    h2 {
+      font-size: 24px;
+      text-align: left;
+      margin-bottom: 1em;
+    }
+    p {
+      font: 14px 'Ubuntu';
+      span {
+        display: block;
+        font: 18px 'Ubuntu-Medium';
+        text-transform: uppercase;
+      }
+    }
+    a {
+      color: $c-white;
+    }
+  }
+}

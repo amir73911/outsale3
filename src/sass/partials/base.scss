@@ -22,6 +22,8 @@ a {
   margin: 0 auto;
   padding: 0 $gap;
   overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 
 section {
@@ -29,6 +31,7 @@ section {
   padding-bottom: 75px;
   background-size: cover;
   background: no-repeat center top;
+  position: relative;
   h2 {
     text-align: center;
     font: 36px 'GothamPro-Bold';
