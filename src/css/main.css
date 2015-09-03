@@ -501,6 +501,7 @@ header .button {
   display: inline-block;
   vertical-align: top;
   width: 25%;
+  margin-bottom: 30px;
 }
 .clients .clients-items .item .image {
   margin-bottom: 20px;
