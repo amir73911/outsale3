@@ -497,6 +497,31 @@ header .button {
   font: 14px 'Ubuntu';
 }
 
+.video {
+  background-image: url("../images/backs/6.jpg");
+  height: 570px;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.5s ease;
+}
+.video.active {
+  background: #000;
+}
+.video.active .videoInner {
+  display: block;
+}
+.video h2 {
+  margin-top: 180px;
+}
+.video .videoInner {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .clients .clients-items {
   font-size: 0;
 }

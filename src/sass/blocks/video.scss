@@ -1,0 +1,24 @@
+.video {
+  background-image: url("../images/backs/6.jpg");
+  height: 570px;
+  cursor: pointer;
+  padding: 0;
+  transition: background $anim-time ease;
+  &.active {
+    background: #000;
+    .videoInner {
+      display: block;
+    }
+  }
+  h2 {
+    margin-top: 180px;
+  }
+  .videoInner {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+  }
+}

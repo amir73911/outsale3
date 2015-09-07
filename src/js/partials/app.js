@@ -46,8 +46,17 @@
 
     };
 
+    var videoOpen = function () {
+        var videoBlock = $('.video');
+        videoBlock.click(function(e){
+            e.preventDefault();
+            videoBlock.addClass('active');
+        });
+    };
+
     $(document).ready(function () {
-        new scrollSpy();
+        scrollSpy();
+        videoOpen();
     });
 
 })(jQuery);
