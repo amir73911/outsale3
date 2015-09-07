@@ -111,6 +111,18 @@
             email_title: 'Заявка'
         });
 
+        $('#main_popup').ajaxMailSend({
+            mail_to: 'info@outsale.org',
+            show_message_block: true,
+            email_title: 'Заявка'
+        });
+
+        $('#footer_form').ajaxMailSend({
+            mail_to: 'info@outsale.org',
+            show_message_block: true,
+            email_title: 'Заявка'
+        });
+
     });
 
 })(jQuery);
