@@ -582,3 +582,38 @@ header .button {
 .contacts .contacts-inner a {
   color: #fff;
 }
+
+.footer {
+  background-image: url("../images/backs/7.jpg");
+  padding-bottom: 60px;
+}
+.footer h2 {
+  font: 36px 'GothamPro-Black';
+  letter-spacing: -2px;
+}
+.footer .footer-form-inner {
+  padding-right: 6%;
+  padding-left: 40%;
+}
+.footer .footer-form-inner form {
+  padding-bottom: 75px;
+}
+.footer .footer-form-inner .footer-inner {
+  border-top: 2px solid #b4bac1;
+  text-align: right;
+  padding: 15px 0;
+  margin-left: 85px;
+}
+.footer .footer-form-inner .footer-inner .phone {
+  color: #141e32;
+  font: 24px 'GothamPro-Bold';
+  text-decoration: none;
+}
+.footer .footer-form-inner .footer-inner .by {
+  color: #141e32;
+  font: 12px 'Ubuntu-Light';
+  padding-top: 5px;
+}
+.footer .footer-form-inner .footer-inner .by a {
+  color: #141e32;
+}

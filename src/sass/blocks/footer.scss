@@ -1,0 +1,34 @@
+.footer {
+  background-image: url("../images/backs/7.jpg");
+  padding-bottom: 60px;
+  h2 {
+    font: 36px 'GothamPro-Black';
+    letter-spacing: -2px;
+  }
+  .footer-form-inner {
+    padding-right: 6%;
+    padding-left: 40%;
+    form {
+      padding-bottom: 75px;
+    }
+    .footer-inner {
+      border-top: 2px solid #b4bac1;
+      text-align: right;
+      padding: 15px 0;
+      margin-left: 85px;
+      .phone {
+        color: $c-main-text;
+        font: 24px 'GothamPro-Bold';
+        text-decoration: none;
+      }
+      .by {
+        color: $c-main-text;
+        font: 12px 'Ubuntu-Light';
+        padding-top: 5px;
+        a {
+          color: $c-main-text;
+        }
+      }
+    }
+  }
+}
