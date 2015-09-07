@@ -105,6 +105,11 @@ section h2 span {
 form {
   font-size: 0;
 }
+form .message {
+  font-size: 12px;
+  padding: 0 20px 10px;
+  color: red;
+}
 form .input-wrapper {
   display: inline-block;
   vertical-align: top;

@@ -3,12 +3,16 @@
 <div class="popup recall-popup">
     <div class="close"></div>
     <div class="title"><span>Перезвоните</span> мне</div>
-    <form action="#">
+    <form action="#" id="recall_popup">
         <div class="row">
-            <div class="input-wrapper"><input class="input input-customer" type="text" placeholder="Ваше имя"/></div>
+            <div class="input-wrapper">
+                <input name="name" data-caption="Имя:" class="input input-customer required" type="text" placeholder="Ваше имя"/>
+            </div>
         </div>
         <div class="row">
-            <div class="input-wrapper"><input class="input input-phone" type="text" placeholder="Ваш телефон"/></div>
+            <div class="input-wrapper">
+                <input name="phone" data-caption="Телефон:" class="input input-phone required" type="text" placeholder="Ваш телефон"/>
+            </div>
         </div>
         <div class="buttons-wrapper">
             <input class="button button-blue" type="submit" value="Отправить"/>
@@ -19,7 +23,7 @@
 <div class="popup bid-popup">
     <div class="close"></div>
     <div class="title">Оставить <span>заявку</span></div>
-    <form action="#">
+    <form action="#" id="bid_popup">
         <input type="hidden" name="bid_theme" class="bid-theme"/>
         <div class="row">
             <div class="input-wrapper"><input class="input input-customer" type="text" placeholder="Ваше имя"/></div>

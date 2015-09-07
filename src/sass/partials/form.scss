@@ -1,5 +1,10 @@
 form {
   font-size: 0;
+  .message {
+    font-size: 12px;
+    padding: 0 20px 10px;
+    color: red;
+  }
   .input-wrapper {
     display: inline-block;
     vertical-align: top;

@@ -98,6 +98,13 @@
         scrollSpy();
         videoOpen();
         popups();
+
+        $('#recall_popup').ajaxMailSend({
+            mail_to: 'gafurovamir@gmail.com',
+            show_message_block: true,
+            email_title: 'Заказ звонка'
+        });
+
     });
 
 })(jQuery);
