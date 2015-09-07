@@ -100,9 +100,15 @@
         popups();
 
         $('#recall_popup').ajaxMailSend({
-            mail_to: 'gafurovamir@gmail.com',
+            mail_to: 'info@outsale.org',
             show_message_block: true,
             email_title: 'Заказ звонка'
+        });
+
+        $('#bid_popup').ajaxMailSend({
+            mail_to: 'info@outsale.org',
+            show_message_block: true,
+            email_title: 'Заявка'
         });
 
     });
