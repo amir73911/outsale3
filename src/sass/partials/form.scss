@@ -34,6 +34,10 @@ form {
   &:focus {
     border-color: $c-main-blue;
   }
+  &.error {
+    border-color: red;
+    background-color: lighten(red, 45%);
+  }
   &.input-customer {
     background-image: inline-image('icons/customer.png');
     &:hover {
@@ -44,6 +48,12 @@ form {
     background-image: inline-image('icons/phone.png');
     &:hover {
       background-image: inline-image('icons/phone-active.png');
+    }
+  }
+  &.input-email {
+    background-image: inline-image('icons/email.png');
+    &:hover {
+      background-image: inline-image('icons/email-active.png');
     }
   }
 }

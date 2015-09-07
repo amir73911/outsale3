@@ -54,9 +54,50 @@
         });
     };
 
+    var popups = function () {
+        var popupBack = $('.popup-back'),
+            popup = $('.popup'),
+            close = popup.find('.close'),
+            recallBtn = $('.recall-button'),
+            bidBtn = $('.bid-button'),
+            recallPopup = $('.recall-popup'),
+            bidPopup = $('.bid-popup'),
+            bidTheme = bidPopup.find('.bid-theme');
+
+        popupBack.click(function(e){
+            e.preventDefault();
+            popupBack.fadeOut();
+            popup.fadeOut();
+            bidTheme.val('');
+        });
+        close.click(function(e){
+            e.preventDefault();
+            popupBack.fadeOut();
+            popup.fadeOut();
+            bidTheme.val('');
+        });
+
+        recallBtn.click(function(e){
+            e.preventDefault();
+            popupBack.fadeIn();
+            recallPopup.fadeIn();
+        });
+
+        bidBtn.click(function(e){
+            e.preventDefault();
+            popupBack.fadeIn();
+            bidPopup.fadeIn();
+
+            bidTheme.val($(this).data('theme'));
+
+        });
+
+    };
+
     $(document).ready(function () {
         scrollSpy();
         videoOpen();
+        popups();
     });
 
 })(jQuery);

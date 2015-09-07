@@ -1,0 +1,48 @@
+.popup-back {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba($c-white, .8);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  margin-left: -200px;
+  z-index: 110;
+  width: 400px;
+  border: 10px solid $c-main-blue;
+  background: $c-white;
+  padding: 30px;
+  .close {
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: inline-image("icons/close.png") no-repeat;
+    cursor: pointer;
+  }
+  .title {
+    color: #000;
+    text-transform: uppercase;
+    font: 30px 'GothamPro-Bold';
+    margin-bottom: 25px;
+    span {
+      color: $c-main-blue;
+    }
+  }
+  form {
+    .input-wrapper {
+      width: 100%;
+      padding: 0 15px 20px;
+    }
+  }
+}

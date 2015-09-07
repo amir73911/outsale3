@@ -96,7 +96,7 @@
                     </div>
                     <div class="title">
                         <p>Холодные <br/> продажи</p>
-                        <a class="button button-blue bid-button" href="#">Оставить заявку</a>
+                        <a class="button button-blue bid-button" data-theme="Холодные продажи" href="#">Оставить заявку</a>
                     </div>
                 </div>
                 <div class="item">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="title">
                         <p>Аутсорсинг <br/> входящей линии</p>
-                        <a class="button button-blue bid-button" href="#">Оставить заявку</a>
+                        <a class="button button-blue bid-button" data-theme="Аутсорсинг входящей линии" href="#">Оставить заявку</a>
                     </div>
                 </div>
                 <div class="item">
@@ -114,7 +114,7 @@
                     </div>
                     <div class="title">
                         <p>Маркетинговые <br/> исследования</p>
-                        <a class="button button-blue bid-button" href="#">Оставить заявку</a>
+                        <a class="button button-blue bid-button" data-theme="Маркетинговые исследования" href="#">Оставить заявку</a>
                     </div>
                 </div>
             </div>
@@ -340,6 +340,44 @@
             </div>
         </div>
     </section>
+
+    <div class="popup-back"></div>
+    
+    <div class="popup recall-popup">
+        <div class="close"></div>
+        <div class="title"><span>Перезвоните</span> мне</div>
+        <form action="#">
+            <div class="row">
+                <div class="input-wrapper"><input class="input input-customer" type="text" placeholder="Ваше имя"/></div>
+            </div>
+            <div class="row">
+                <div class="input-wrapper"><input class="input input-phone" type="text" placeholder="Ваш телефон"/></div>
+            </div>
+            <div class="buttons-wrapper">
+                <input class="button button-blue" type="submit" value="Отправить"/>
+            </div>
+        </form>
+    </div>
+    
+    <div class="popup bid-popup">
+        <div class="close"></div>
+        <div class="title">Оставить <span>заявку</span></div>
+        <form action="#">
+            <input type="hidden" name="bid_theme" class="bid-theme"/>
+            <div class="row">
+                <div class="input-wrapper"><input class="input input-customer" type="text" placeholder="Ваше имя"/></div>
+            </div>
+            <div class="row">
+                <div class="input-wrapper"><input class="input input-phone" type="text" placeholder="Ваш телефон"/></div>
+            </div>
+            <div class="row">
+                <div class="input-wrapper"><input class="input input-email" type="text" placeholder="Электронная почта"/></div>
+            </div>
+            <div class="buttons-wrapper">
+                <input class="button button-blue" type="submit" value="Отправить"/>
+            </div>
+        </form>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
