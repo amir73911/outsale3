@@ -7,7 +7,8 @@
         req_err_msg : 'Вы не заполнили обязательные поля',
         email_err_msg : 'Укажите email для отправки данной формы',
         email_title : '',
-        send_button : 'input[type="submit"]'   // кнопка отправки
+        send_button : 'input[type="submit"]',   // кнопка отправки
+        onTest: null
     };
 
     $.fn.ajaxMailSend = function(options) {
@@ -78,7 +79,10 @@
                 e.preventDefault();
 
                 button.attr('disabled', 'disabled').val("Отправка...");
-                message_block.html("");
+
+                if (config.show_message_block) {
+                    message_block.html("");
+                }
 
                 // проверка на пустоту обязательных полей
                 var empty_fields = 0;
@@ -119,6 +123,7 @@
                                         .slideUp(200)
                                 }
                                 button.val("Отправлено!");
+                                onSuccess();
                             } else { // если что-то пошло не так в php
                                 if (config.show_message_block){
                                     message_block.removeClass('fine')
@@ -164,6 +169,19 @@
 
 
             });
+
+
+           function onSuccess() {
+               var id = form.attr('id');
+
+               if (id == 'bid_popup') {
+                   yaCounter30783208.reachGoal('zayavka');
+                   ga('send', 'event', 'outsale', 'zayavka');
+               } else {
+                   yaCounter30783208.reachGoal('perezvon');
+                   ga('send', 'event', 'outsale', 'perezvon');
+               }
+           }
 
         });
 

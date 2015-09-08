@@ -15,8 +15,6 @@
                 }
             });
 
-        console.log(topMenuHeight)
-
         menuItems.click(function (e) {
             var href = $(this).attr("href"),
                 offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
@@ -94,34 +92,50 @@
 
     };
 
-    $(document).ready(function () {
-        scrollSpy();
-        videoOpen();
-        popups();
+    var mailSending = function () {
+
+        var mailTo = 'leads@outsale.org';
 
         $('#recall_popup').ajaxMailSend({
-            mail_to: 'info@outsale.org',
+            mail_to: mailTo,
             show_message_block: true,
             email_title: 'Заказ звонка'
         });
 
         $('#bid_popup').ajaxMailSend({
-            mail_to: 'info@outsale.org',
+            mail_to: mailTo,
             show_message_block: true,
             email_title: 'Заявка'
         });
 
-        $('#main_popup').ajaxMailSend({
-            mail_to: 'info@outsale.org',
-            show_message_block: true,
+        $('#main_form').ajaxMailSend({
+            mail_to: mailTo,
+            show_message_block: false,
             email_title: 'Заявка'
         });
 
         $('#footer_form').ajaxMailSend({
-            mail_to: 'info@outsale.org',
-            show_message_block: true,
+            mail_to: mailTo,
+            show_message_block: false,
             email_title: 'Заявка'
         });
+
+        $('form input[type="text"]').each(function(){
+            $(this).keyup(function(){
+                if ($(this).val().length >= 5) {
+                    yaCounter30783208.reachGoal('form');
+                    ga('send', 'event', 'outsale', 'form');
+                }
+            });
+        });
+
+    };
+
+    $(document).ready(function () {
+        scrollSpy();
+        videoOpen();
+        popups();
+        mailSending();
 
     });
 
