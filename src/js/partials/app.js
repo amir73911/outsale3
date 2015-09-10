@@ -137,6 +137,8 @@
         popups();
         mailSending();
 
+        new WOW().init();
+
     });
 
 })(jQuery);
