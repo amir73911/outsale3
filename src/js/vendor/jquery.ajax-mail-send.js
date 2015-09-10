@@ -111,7 +111,7 @@
                         type: 'POST',
                         url: 'php/mail_send.php',
                         dataType: 'json',
-                        data: { data: data, info: info, captions: captions },
+                        data: { data: data, info: info, captions: captions, currentUrl: window.location.href },
                         success: function(msg) {
                             if($.trim(msg) == "true") { // если отправлено
                                 if (config.show_message_block){
