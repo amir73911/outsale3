@@ -50,7 +50,6 @@ a:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
-  overflow: hidden;
   position: relative;
   height: 100%;
 }
@@ -527,7 +526,7 @@ header .button {
   display: block;
 }
 .video h2 {
-  margin-top: 180px;
+  padding-top: 180px;
 }
 .video .videoInner {
   display: none;
