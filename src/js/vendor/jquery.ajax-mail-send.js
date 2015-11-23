@@ -7,8 +7,7 @@
         req_err_msg : 'Вы не заполнили обязательные поля',
         email_err_msg : 'Укажите email для отправки данной формы',
         email_title : '',
-        send_button : 'input[type="submit"]',   // кнопка отправки
-        onTest: null
+        send_button : 'input[type="submit"]'   // кнопка отправки
     };
 
     $.fn.ajaxMailSend = function(options) {
@@ -55,7 +54,7 @@
             }
 
             // создание массива с caption'ами для полей
-            var inputs = form.find('input[type="text"], textarea, select');
+            var inputs = form.find('.input, textarea, select');
             inputs.each(function() {
                 captions[$(this).attr('name')] = $(this).data('caption');
             });

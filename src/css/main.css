@@ -351,8 +351,8 @@ header .button {
 }
 .services .features-items .item {
   display: inline-block;
-  vertical-align: middle;
-  width: 20%;
+  vertical-align: top;
+  width: 25%;
   text-align: center;
   font: 16px 'Ubuntu-Medium';
   padding: 0 10px;
