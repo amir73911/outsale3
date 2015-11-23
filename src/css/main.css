@@ -48,6 +48,7 @@ a:hover {
 
 .container {
   max-width: 1200px;
+  min-width: 640px;
   margin: 0 auto;
   padding: 0 10px;
   position: relative;
@@ -57,8 +58,8 @@ a:hover {
 section {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-size: cover;
   background: no-repeat center top;
+  background-size: cover;
   position: relative;
 }
 section h2 {
@@ -229,10 +230,24 @@ header #main_nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.5s ease;
-  padding: 0 20px;
   display: block;
   height: 100%;
   line-height: 60px;
+}
+@media (min-width: 768px) {
+  header #main_nav ul li a {
+    padding: 0 5px;
+  }
+}
+@media (min-width: 1200px) {
+  header #main_nav ul li a {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 992px) {
+  header #main_nav ul li a {
+    display: none;
+  }
 }
 header #main_nav ul li a:hover {
   color: #209cbe;
@@ -275,9 +290,24 @@ header .button {
 .main-client-problems .problems .item {
   display: inline-block;
   vertical-align: top;
-  width: 25%;
   text-align: center;
-  padding: 10px;
+  padding-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .main-client-problems .problems .item {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .main-client-problems .problems .item {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .main-client-problems .problems .item {
+    width: 25%;
+    padding: 10px;
+  }
 }
 .main-client-problems .problems .item .image {
   margin-bottom: 20px;
@@ -307,19 +337,25 @@ header .button {
   padding-bottom: 535px;
 }
 .services .services-items {
-  padding: 0 100px;
   margin-bottom: 150px;
+}
+@media (min-width: 1200px) {
+  .services .services-items {
+    padding: 0 100px;
+  }
 }
 .services .services-items .item {
   font-size: 0;
   margin-bottom: 75px;
 }
-.services .services-items .item:nth-child(even) {
-  direction: rtl;
-}
-.services .services-items .item:nth-child(even) .title .button {
-  left: auto;
-  right: 20px;
+@media (min-width: 992px) {
+  .services .services-items .item:nth-child(even) {
+    direction: rtl;
+  }
+  .services .services-items .item:nth-child(even) .title .button {
+    left: auto;
+    right: 20px;
+  }
 }
 .services .services-items .item .image,
 .services .services-items .item .title {
@@ -328,23 +364,48 @@ header .button {
   padding: 0 20px;
 }
 .services .services-items .item .image {
-  max-width: 240px;
+  max-width: 180px;
+}
+@media (max-width: 767px) {
+  .services .services-items .item .image {
+    max-width: 140px;
+  }
+}
+@media (min-width: 992px) {
+  .services .services-items .item .image {
+    max-width: 240px;
+  }
 }
 .services .services-items .item .image img {
   max-width: 100%;
 }
 .services .services-items .item .title {
-  font: 36px 'GothamPro-Bold';
+  font: 32px 'GothamPro-Bold';
   text-transform: uppercase;
   position: relative;
+}
+@media (max-width: 767px) {
+  .services .services-items .item .title {
+    font: 24px 'GothamPro-Bold';
+  }
+}
+@media (min-width: 992px) {
+  .services .services-items .item .title {
+    font: 36px 'GothamPro-Bold';
+  }
 }
 .services .services-items .item .title p {
   margin: 0;
 }
 .services .services-items .item .title .button {
   position: absolute;
-  bottom: -80px;
+  bottom: -60px;
   left: 20px;
+}
+@media (min-width: 992px) {
+  .services .services-items .item .title .button {
+    bottom: -80px;
+  }
 }
 .services .features-items {
   font-size: 0;
@@ -355,7 +416,23 @@ header .button {
   width: 25%;
   text-align: center;
   font: 16px 'Ubuntu-Medium';
-  padding: 0 10px;
+  padding-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .services .features-items .item {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .services .features-items .item {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .services .features-items .item {
+    width: 25%;
+    padding: 0 10px;
+  }
 }
 .services .features-items .item .image {
   margin-bottom: 25px;
@@ -375,9 +452,16 @@ header .button {
 .main-form h2 {
   font: 60px 'GothamPro-Black';
 }
-.main-form .main-form-inner {
-  width: 60%;
-  padding-left: 6%;
+@media (min-width: 992px) {
+  .main-form .main-form-inner {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .main-form .main-form-inner {
+    width: 60%;
+    padding-left: 6%;
+  }
 }
 
 .work-plan {
@@ -480,13 +564,27 @@ header .button {
   vertical-align: top;
   width: 25%;
   color: #1b1b1b;
-  padding-right: 65px;
+  padding-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .team .team-items .item {
+    width: 50%;
+    padding-left: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .team .team-items .item {
+    width: 25%;
+    padding-bottom: 0;
+    padding-right: 65px;
+  }
 }
 .team .team-items .item .image {
   position: relative;
 }
 .team .team-items .item .image img {
   transition: opacity 0.5s ease;
+  max-width: 100%;
 }
 .team .team-items .item .image .img {
   display: block;
@@ -543,8 +641,18 @@ header .button {
 .clients .clients-items .item {
   display: inline-block;
   vertical-align: top;
-  width: 25%;
-  margin-bottom: 30px;
+  padding: 0 10px 30px;
+}
+@media (max-width: 767px) {
+  .clients .clients-items .item {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .clients .clients-items .item {
+    width: 25%;
+  }
 }
 .clients .clients-items .item .image {
   margin-bottom: 20px;

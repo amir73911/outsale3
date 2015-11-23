@@ -56,10 +56,18 @@ header {
           text-decoration: none;
           text-transform: uppercase;
           transition: all $anim-time ease;
-          padding: 0 20px;
           display: block;
           height: 100%;
           line-height: $header-height;
+          @include breakpoint(sm) {
+            padding: 0 5px;
+          }
+          @include breakpoint(lg) {
+            padding: 0 20px;
+          }
+          @include breakpoint(mdmax) {
+            display: none;
+          }
           &:hover {
             color: $c-main-blue;
           }

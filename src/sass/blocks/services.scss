@@ -2,17 +2,21 @@
   background: url("../images/backs/3.jpg") center bottom no-repeat;
   padding-bottom: 535px;
   .services-items {
-    padding: 0 100px;
+    @include breakpoint (lg) {
+      padding: 0 100px;
+    }
     margin-bottom: 150px;
     .item {
       font-size: 0;
       margin-bottom: 75px;
-      &:nth-child(even) {
-        direction: rtl;
-        .title {
-          .button {
-            left: auto;
-            right: $gap*2;
+      @include breakpoint (md) {
+        &:nth-child(even) {
+          direction: rtl;
+          .title {
+            .button {
+              left: auto;
+              right: $gap*2;
+            }
           }
         }
       }
@@ -23,22 +27,37 @@
         padding: 0 $gap*2;
       }
       .image {
-        max-width: 220px + $gap*2;
+        max-width: 160px + $gap*2;
+        @include breakpoint (xs) {
+          max-width: 120px + $gap*2;
+        }
+        @include breakpoint (md) {
+          max-width: 220px + $gap*2;
+        }
         img {
           max-width: 100%;
         }
       }
       .title {
-        font: 36px 'GothamPro-Bold';
+        font: 32px 'GothamPro-Bold';
         text-transform: uppercase;
         position: relative;
+        @include breakpoint (xs) {
+          font: 24px 'GothamPro-Bold';
+        }
+        @include breakpoint (md) {
+          font: 36px 'GothamPro-Bold';
+        }
         p {
           margin: 0;
         }
         .button {
           position: absolute;
-          bottom: -80px;
+          bottom: -60px;
           left: $gap*2;
+          @include breakpoint (md) {
+            bottom: -80px;
+          }
         }
       }
     }
@@ -52,7 +71,17 @@
       width: 25%;
       text-align: center;
       font: 16px 'Ubuntu-Medium';
-      padding: 0 $gap;
+      padding-bottom: 25px;
+      @include breakpoint (xs) {
+        width: 100%;
+      }
+      @include breakpoint (sm) {
+        width: 50%;
+      }
+      @include breakpoint (lg) {
+        width: 25%;
+        padding: 0 $gap;
+      }
       .image {
         margin-bottom: 25px;
         img {

@@ -19,6 +19,7 @@ a {
 
 .container {
   max-width: $container-width;
+  min-width: 640px;
   margin: 0 auto;
   padding: 0 $gap;
   position: relative;
@@ -28,8 +29,8 @@ a {
 section {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-size: cover;
   background: no-repeat center top;
+  background-size: cover;
   position: relative;
   h2 {
     text-align: center;
@@ -43,5 +44,31 @@ section {
     span {
       color: $c-main-blue;
     }
+  }
+}
+
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+
+  @else if $class == mdmax {
+    @media (max-width: 992px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }
 }

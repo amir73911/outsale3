@@ -4,8 +4,14 @@
     .item {
       display: inline-block;
       vertical-align: top;
-      width: 25%;
-      margin-bottom: $gap*3;
+      padding: 0 $gap $gap*3;
+      @include breakpoint (xs) {
+        width: 50%;
+        text-align: center;
+      }
+      @include breakpoint (sm) {
+        width: 25%;
+      }
       .image {
         margin-bottom: $gap*2;
         img {

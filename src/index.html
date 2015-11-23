@@ -2,7 +2,15 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Outsale</title>
+    //= template/scripts.html
+    <script type="text/javascript">
+        var contentViewport = 'width=device-width, initial-scale=1.0';
+        if(device.mobile()) {
+            contentViewport = 'width=640, initial-scale=1.0';
+        }
+        document.write('<meta name="viewport" content="'+contentViewport+'" />');
+    </script>
     //= template/styles.html
 </head>
 <body>
@@ -23,6 +31,5 @@
 
     //= template/blocks/search_counters.html
 
-    //= template/scripts.html
 </body>
 </html>

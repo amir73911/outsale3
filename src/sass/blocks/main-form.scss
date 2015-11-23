@@ -5,7 +5,12 @@
     font: 60px 'GothamPro-Black';
   }
   .main-form-inner {
-    width: 60%;
-    padding-left: 6%;
+    @include breakpoint (md) {
+      width: 80%;
+    }
+    @include breakpoint (lg) {
+      width: 60%;
+      padding-left: 6%;
+    }
   }
 }
